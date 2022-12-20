@@ -51,17 +51,10 @@ RSpec.describe "Scientists", type: :request do
           planets: [
             {
               id: a_kind_of(Integer),
-              name: "TauCeti E", 
-              distance_from_earth: "12 light years", 
-              nearest_star: "TauCeti", 
-              image: "planet3"
-            },
-            {
-              id: a_kind_of(Integer),
-              name: "Maxxor",
-              distance_from_earth: "9 parsecs", 
-              nearest_star: "Canus Minor", 
-              image: "planet7"
+              name: a_kind_of(String), 
+              distance_from_earth: a_kind_of(String), 
+              nearest_star: a_kind_of(String), 
+              image: a_kind_of(String)
             }
           ]
         })
